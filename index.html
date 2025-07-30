@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marco Art Prints – Limited Collector's Editions</title>
+  <meta name="description" content="Luxury hand‑signed art prints by Marco. Limited to 50 editions each.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family:'Montserrat', sans-serif; background:#0a0a0a; color:#f5f5f5; margin:0; }
+    header { position:relative; height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; overflow:hidden; }
+    header video { position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:-2; }
+    header::before { content:''; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.55); z-index:-1; }
+    header h1 { font-family:'Playfair Display', serif; font-size:4.5rem; color:#d4af37; text-shadow:0 0 25px rgba(212,175,55,0.5); }
+    header p { font-size:1.4rem; max-width:700px; color:#fff; text-shadow:0 0 15px rgba(0,0,0,0.8); }
+    .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(340px,1fr)); gap:60px; padding:80px 10%; }
+    .art-card { background:#141414; border-radius:16px; padding:28px; text-align:center; box-shadow:0 20px 40px rgba(0,0,0,0.7); }
+    .art-card img { width:100%; border-radius:12px; margin-bottom:15px; }
+    .art-card h2 { font-family:'Playfair Display', serif; font-size:2rem; color:#d4af37; margin:10px 0; }
+    .availability-bar { width:100%; background:#333; border-radius:20px; height:12px; overflow:hidden; margin-bottom:8px; }
+    .availability-fill { height:12px; background:#d4af37; width:90%; }
+    .edition { font-size:.95rem; margin-bottom:10px; color:#bbb; font-style:italic; }
+    .art-card p { font-size:1rem; color:#ddd; margin-bottom:12px; }
+    .price-info { font-size:.95rem; color:#aaa; margin-bottom:14px; }
+    .buy-btn { background:#d4af37; color:#000; padding:14px 32px; text-decoration:none; font-weight:700; border-radius:35px; font-size:1.1rem; display:inline-block; }
+    .buy-btn:hover { background:#c19b2e; }
+    footer { text-align:center; padding:40px 20px; font-size:.95rem; color:#aaa; background:#111; }
+  </style>
+</head>
+<body>
+<header>
+  <video autoplay muted loop>
+    <source src="https://cdn.coverr.co/videos/coverr-paintbrush-on-canvas-5182/1080p.mp4" type="video/mp4">
+  </video>
+  <h1>Marco Art Prints</h1>
+  <p>Luxury collector’s editions – each print hand‑signed, limited to 50 copies worldwide.</p>
+</header>
+
+<section class="gallery">
+  <div class="art-card">
+    <img src="https://i.imgur.com/LfcvjT1.jpeg" alt="Daughter of Ancients" />
+    <h2>Daughter of Ancients</h2>
+    <div class="availability-bar"><div id="bar1" class="availability-fill" style="width:92%"></div></div>
+    <p class="edition" id="ed1">46 / 50 Editions Remaining</p>
+    <p>A portrait of timeless strength and ancestral wisdom.</p>
+    <p class="price-info">Price: 80€ + 20€ worldwide shipping</p>
+    <a class="buy-btn" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=fargnom14%40gmail.com&currency_code=EUR&amount=100&item_name=Daughter%20of%20Ancients%20Print" onclick="reduce('ed1','bar1')" target="_blank">Buy Now – 100€</a>
+  </div>
+
+  <div class="art-card">
+    <img src="https://i.imgur.com/TVDhTpA.jpeg" alt="Digital Possession" />
+    <h2>Digital Possession</h2>
+    <div class="availability-bar"><div id="bar2" class="availability-fill" style="width:90%"></div></div>
+    <p class="edition" id="ed2">45 / 50 Editions Remaining</p>
+    <p>A haunting reflection of our digital age.</p>
+    <p class="price-info">Price: 80€ + 20€ worldwide shipping</p>
+    <a class="buy-btn" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=fargnom14%40gmail.com&currency_code=EUR&amount=100&item_name=Digital%20Possession%20Print" onclick="reduce('ed2','bar2')" target="_blank">Buy Now – 100€</a>
+  </div>
+
+  <div class="art-card">
+    <img src="https://i.imgur.com/INfPamN.jpeg" alt="Eclipse of Freedom" />
+    <h2>Eclipse of Freedom</h2>
+    <div class="availability-bar"><div id="bar3" class="availability-fill" style="width:88%"></div></div>
+    <p class="edition" id="ed3">44 / 50 Editions Remaining</p>
+    <p>The raw moment of liberation and awakening.</p>
+    <p class="price-info">Price: 80€ + 20€ worldwide shipping</p>
+    <a class="buy-btn" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=fargnom14%40gmail.com&currency_code=EUR&amount=100&item_name=Eclipse%20of%20Freedom%20Print" onclick="reduce('ed3','bar3')" target="_blank">Buy Now – 100€</a>
+  </div>
+</section>
+
+<footer>
+  © 2025 Marco Art Prints – Limited Collector's Editions
+</footer>
+
+<script>
+function reduce(editionId, barId) {
+  const editionEl = document.getElementById(editionId);
+  const barEl = document.getElementById(barId);
+  let current = parseInt(editionEl.textContent);
+  if (current > 0) {
+    current -= 1;
+    editionEl.textContent = current + " / 50 Editions Remaining";
+    let newWidth = Math.round((current/50)*100);
+    barEl.style.width = newWidth + "%";
+  }
+}
+</script>
+</body>
+</html>
