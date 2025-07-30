@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MARCO – Collector's Edition Art Prints</title>
+  
+<style>
+  body { font-family:'Montserrat', sans-serif; background:#0a0a0a; color:#f5f5f5; margin:0; }
+  header { text-align:center; padding:60px 20px; }
+  header h1 { font-family:'Playfair Display', serif; font-size:3rem; color:#d4af37; letter-spacing:4px; }
+  header p { font-size:1.3rem; color:#ccc; max-width:700px; margin:10px auto; }
+  .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(340px,1fr)); gap:50px; padding:60px 10%; }
+  .art-card { background:#141414; border-radius:16px; padding:24px; text-align:center; box-shadow:0 20px 40px rgba(0,0,0,0.7); cursor:pointer; transition:transform .3s; }
+  .art-card:hover { transform:translateY(-5px) scale(1.02); }
+  .art-card img { width:100%; border-radius:12px; margin-bottom:15px; }
+  .art-card h2 { font-family:'Playfair Display', serif; font-size:1.8rem; color:#d4af37; }
+  .availability-bar { width:100%; background:#333; border-radius:20px; height:12px; overflow:hidden; margin-bottom:8px; }
+  .availability-fill { height:12px; background:#d4af37; }
+  .edition { font-size:.95rem; margin-bottom:10px; color:#bbb; }
+  .buy-btn { background:#d4af37; color:#000; padding:14px 32px; text-decoration:none; font-weight:700; border-radius:35px; font-size:1.1rem; display:inline-block; }
+  .buy-btn:hover { background:#c19b2e; }
+  .product-container { max-width:800px; margin:60px auto; text-align:center; }
+  .product-container img { width:100%; border-radius:12px; }
+  .product-container h2 { font-family:'Playfair Display', serif; font-size:2.2rem; color:#d4af37; margin-top:20px; }
+  .product-container p { font-size:1.1rem; color:#ddd; margin:15px 0; }
+  .price-info { font-size:1rem; color:#aaa; margin-bottom:16px; }
+  footer { text-align:center; padding:30px; font-size:.9rem; color:#aaa; background:#111; margin-top:60px; }
+</style>
+
+</head>
+<body>
+<header>
+  <h1>MARCO</h1>
+  <p>Collector’s Edition Art Prints – Hand‑signed, Limited to 50</p>
+</header>
+<div class="gallery">
+  <a href="daughter.html" class="art-card">
+    <img src="https://i.imgur.com/LfcvjT1.jpeg" alt="Daughter of Ancients">
+    <h2>Daughter of Ancients</h2>
+    <div class="availability-bar"><div class="availability-fill" style="width:92%"></div></div>
+    <p class="edition">46 / 50 Editions Remaining</p>
+  </a>
+  <a href="digital.html" class="art-card">
+    <img src="https://i.imgur.com/TVDhTpA.jpeg" alt="Digital Possession">
+    <h2>Digital Possession</h2>
+    <div class="availability-bar"><div class="availability-fill" style="width:90%"></div></div>
+    <p class="edition">45 / 50 Editions Remaining</p>
+  </a>
+  <a href="eclipse.html" class="art-card">
+    <img src="https://i.imgur.com/INfPamN.jpeg" alt="Eclipse of Freedom">
+    <h2>Eclipse of Freedom</h2>
+    <div class="availability-bar"><div class="availability-fill" style="width:88%"></div></div>
+    <p class="edition">44 / 50 Editions Remaining</p>
+  </a>
+</div>
+<footer>© 2025 Marco Art Prints – Limited Collector's Editions</footer>
+</body>
+</html>
