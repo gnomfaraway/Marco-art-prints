@@ -1,0 +1,137 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marco Art Prints – Limited Collector's Editions</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', serif;
+      background-color: #0a0a0a;
+      color: #f5f5f5;
+      background-image: radial-gradient(circle at center, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to bottom, #111, #0a0a0a);
+    }
+    header h1 {
+      font-size: 3em;
+      color: #d4af37;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+    header p {
+      font-size: 1.3em;
+      max-width: 700px;
+      margin: 10px auto 0;
+      color: #ddd;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 60px 20px;
+    }
+    .art-card {
+      background: rgba(20,20,20,0.95);
+      border: 1px solid #333;
+      border-radius: 14px;
+      width: 320px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+      transition: transform 0.3s;
+    }
+    .art-card:hover {
+      transform: scale(1.03);
+    }
+    .art-card img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    }
+    .art-card h2 {
+      color: #d4af37;
+      font-size: 1.6em;
+      margin: 15px 0 10px;
+    }
+    .art-card p {
+      font-size: 1em;
+      margin-bottom: 15px;
+      color: #e0e0e0;
+    }
+    .buy-btn {
+      background: #d4af37;
+      color: #000;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    .buy-btn:hover {
+      background: #b9962d;
+    }
+    .about {
+      padding: 70px 20px;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.6em;
+    }
+    .about h2 {
+      color: #d4af37;
+      font-size: 2.2em;
+      margin-bottom: 25px;
+    }
+    .about p {
+      font-size: 1.2em;
+      color: #ddd;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #111;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Marco Art Prints</h1>
+    <p>Hand‑signed, museum‑quality limited edition prints – Only 50 copies per design, each numbered and unique.</p>
+  </header>  <section class="gallery">
+    <div class="art-card">
+      <img src="https://i.imgur.com/LfcvjT1.jpeg" alt="Eternal Serpent">
+      <h2>Eternal Serpent</h2>
+      <p><em>Eternal Serpent</em> is a hypnotic vision of rebirth and infinite power. Flowing sacred geometry wraps around a hand‑drawn serpent, symbolizing primal energy and spiritual awakening. This artwork invites the collector to reflect on cycles of transformation and inner strength.</p>
+      <a class="buy-btn" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=fargnom14@gmail.com&currency_code=EUR&amount=80&item_name=Eternal%20Serpent%20Print" target="_blank">Buy for 80€</a>
+    </div><div class="art-card">
+  <img src="https://i.imgur.com/TVDhTpA.jpeg" alt="Celestial Veil">
+  <h2>Celestial Veil</h2>
+  <p><em>Celestial Veil</em> captures the essence of divine femininity, adorned with surreal ornaments and ethereal flow. It represents mystery, beauty, and the cosmic bond between humanity and the universe, making it a statement piece of spiritual elegance.</p>
+  <a class="buy-btn" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=fargnom14@gmail.com&currency_code=EUR&amount=80&item_name=Celestial%20Veil%20Print" target="_blank">Buy for 80€</a>
+</div>
+
+<div class="art-card">
+  <img src="https://i.imgur.com/INfPamN.jpeg" alt="Crown of Shadows">
+  <h2>Crown of Shadows</h2>
+  <p><em>Crown of Shadows</em> is a darkly regal composition blending gothic architecture, sacred patterns, and an intense, commanding gaze. It speaks to power, vulnerability, and inner sovereignty—a must‑have for collectors of bold, meaningful art.</p>
+  <a class="buy-btn" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=fargnom14@gmail.com&currency_code=EUR&amount=80&item_name=Crown%20of%20Shadows%20Print" target="_blank">Buy for 80€</a>
+</div>
+
+  </section>  <section class="about">
+    <h2>About Marco</h2>
+    <p>Marco is a visionary freehand tattoo artist and illustrator whose work merges gothic symmetry, sacred geometry, and surreal portraiture. Each piece is crafted with meticulous detail, evoking raw human emotion and spiritual depth. Marco’s art explores themes of transformation, power, and the unseen forces that shape our lives. <br><br>
+    These limited edition prints are more than artworks—they are talismans for collectors who value beauty, meaning, and exclusivity. Each museum‑quality giclée print is individually hand‑signed, numbered, and limited to 50 copies worldwide, ensuring its rarity and value.</p>
+  </section>  <footer>
+    © 2025 Marco Art Prints – Limited Collector's Editions
+  </footer>
+</body>
+</html>
